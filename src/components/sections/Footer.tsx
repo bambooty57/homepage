@@ -8,16 +8,16 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const contactInfo = [
-    { icon: FaPhone, text: '1544-1234', href: 'tel:1544-1234' },
-    { icon: FaMapMarkerAlt, text: '경기도 수원시 영통구 광교로 107', href: 'https://maps.google.com/?q=경기도+수원시+영통구+광교로+107' },
-    { icon: FaEnvelope, text: 'contact@tracforce.co.kr', href: 'mailto:contact@tracforce.co.kr' },
+    { icon: FaPhone, text: '010-1234-5678', href: 'tel:010-1234-5678' },
+    { icon: FaMapMarkerAlt, text: '전라남도 나주시 농업로 123', href: 'https://maps.google.com/?q=전라남도+나주시+농업로+123' },
+    { icon: FaEnvelope, text: 'info@tracforce.kr', href: 'mailto:info@tracforce.kr' },
     { icon: RiKakaoTalkFill, text: 'TracForce 카카오톡', href: 'https://pf.kakao.com/_tracforce' }
   ];
 
   const socialLinks = [
     { icon: FaFacebook, href: 'https://facebook.com/tracforce' },
     { icon: FaInstagram, href: 'https://instagram.com/tracforce' },
-    { icon: FaYoutube, href: 'https://youtube.com/tracforce' },
+    { icon: FaYoutube, href: 'https://youtube.com/channel/tracforce' },
     { icon: RiKakaoTalkFill, href: 'https://pf.kakao.com/_tracforce' }
   ];
 

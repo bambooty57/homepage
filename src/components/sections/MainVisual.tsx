@@ -61,13 +61,15 @@ const MainVisual = () => {
         </AnimatedSection>
         
         <AnimatedSection delay={0.6}>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <button className="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+          <div className="flex justify-center mb-16">
+            <a 
+              href="https://forms.gle/YourGoogleFormLink" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
               무료 상담 신청
-            </button>
-            <button className="px-8 py-4 bg-white text-gray-900 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
-              서비스 알아보기
-            </button>
+            </a>
           </div>
         </AnimatedSection>
 
