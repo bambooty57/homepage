@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/github",
+        "--key",
+        "f4874289-2a07-49cb-a7d9-f4d8d2746c50"
+      ]
+    },
+    "browser-tools": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "@agentdeskai/browser-tools-mcp@1.2.0"
+      ],
+      "enabled": true
+    }
+  }
+} 

@@ -1,0 +1,85 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+Technical Standards
+
+Code Architecture
+
+Implement component-based architecture for better maintainability
+Follow proper semantic HTML structure with appropriate sectioning
+Use CSS variables for consistent theming (colors, typography, spacing)
+Create modular JavaScript functions with clear separation of concerns
+Document code with clear, explanatory comments in Korean
+
+
+Responsive Design Implementation
+
+Follow mobile-first approach with specific breakpoints (576px, 768px, 992px, 1200px)
+Ensure fluid typography scaling between breakpoints
+Implement responsive images with proper srcset attributes
+Ensure touch-friendly UI elements (min 44×44px tap targets)
+Test all interactive elements across device sizes
+
+Performance Optimization
+
+Lazy load non-critical images and components
+Minify CSS and JavaScript in production version
+Implement efficient DOM manipulation techniques
+Optimize image assets (WebP format, appropriate compression)
+Keep total page weight under 2MB for optimal loading speed
+
+
+Accessibility Standards
+
+Maintain WCAG 2.1 AA compliance
+Implement proper ARIA attributes where necessary
+Ensure keyboard navigation functionality
+Maintain accessible color contrast ratios (minimum 4.5:1)
+Provide text alternatives for all non-text content
+
+Project-Specific Requirements
+
+Landing Page Sections Implementation
+
+Create each section according to the specifications in 설계안.txt
+Implement smooth scroll behavior between sections
+Ensure consistent section padding and spacing
+Add appropriate data attributes for analytics tracking
+
+
+Interactive Components
+
+Implement accordion UI for FAQ section with smooth animations
+Create testimonial carousel with intuitive navigation
+Develop form validation with clear error messaging
+Implement floating CTA button that appears after scrolling
+Add subtle scroll animations to enhance engagement
+
+Integration Requirements
+
+Implement Google Forms embedding with proper styling
+Set up click-to-call functionality for phone numbers
+Create KakaoTalk channel integration as specified
+Add YouTube video embeds with optimized loading
+Implement analytics event tracking for key user interactions
+
+
+Documentation and Delivery
+
+Document all custom JavaScript functions
+Create README file explaining project structure
+List any third-party dependencies with versions
+Provide browser compatibility information
+Include deployment instructions for Firebase Hosting
+
+
+
+
+

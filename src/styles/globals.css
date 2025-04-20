@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-900 leading-relaxed;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  /* 반응형 섹션 패딩 */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* 반응형 그리드 */
+  .responsive-grid {
+    @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+
+  /* 반응형 이미지 컨테이너 */
+  .image-container {
+    @apply relative w-full;
+  }
+
+  .image-container.square {
+    @apply aspect-square;
+  }
+
+  .image-container.video {
+    @apply aspect-video;
+  }
+
+  /* 반응형 텍스트 크기 */
+  .text-responsive {
+    @apply text-base md:text-lg lg:text-xl;
+  }
+
+  /* 반응형 카드 */
+  .card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 md:p-8;
+  }
+
+  /* 반응형 아이콘 */
+  .icon {
+    @apply w-8 h-8 md:w-10 md:h-10;
+  }
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    @apply px-8;
+  }
+} 
