@@ -51,57 +51,54 @@ const Header = () => {
           </button>
 
           {/* 데스크탑 네비게이션 */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="#features" 
-              className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
-            >
-              서비스 특징
-            </Link>
-            <Link 
-              href="#process" 
-              className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
-            >
-              작업 과정
-            </Link>
-            <Link 
-              href="#testimonials" 
-              className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
-            >
-              고객 후기
-            </Link>
-            <Link 
-              href="#faq" 
-              className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
-            >
-              자주 묻는 질문
-            </Link>
-          </nav>
-
-          {/* 연락처 */}
           <div className="hidden md:flex items-center space-x-4">
-            <a 
-              href="tel:010-7465-5179"
-              className="flex items-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors shadow-md"
-            >
-              <FaPhone className="mr-2" />
-              <span>010-7465-5179</span>
-            </a>
-            <Link 
-              href="#contact"
-              className="btn-primary"
-            >
-              상담 신청
-            </Link>
+            <nav className="flex items-center space-x-8 mr-8">
+              <Link 
+                href="#features" 
+                className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
+              >
+                서비스 특징
+              </Link>
+              <Link 
+                href="#process" 
+                className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
+              >
+                작업 과정
+              </Link>
+              <Link 
+                href="#testimonials" 
+                className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
+              >
+                고객 후기
+              </Link>
+              <Link 
+                href="#faq" 
+                className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
+              >
+                자주 묻는 질문
+              </Link>
+            </nav>
+
+            <div className="flex items-center space-x-4">
+              <a 
+                href="tel:010-7465-5179"
+                className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-base"
+              >
+                <FaPhone className="mr-2" />
+                <span>010-7465-5179</span>
+              </a>
+              <Link 
+                href="#contact"
+                className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors text-base font-semibold"
+              >
+                상담 신청
+              </Link>
+            </div>
           </div>
         </div>
 
         {/* 모바일 메뉴 */}
-        <div 
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0 mt-0'
-          }`}
-        >
+        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <nav className="flex flex-col space-y-4 pb-4">
             <Link 
               href="#features" 
@@ -134,14 +131,14 @@ const Header = () => {
             <div className="flex flex-col space-y-3 pt-2">
               <a 
                 href="tel:010-7465-5179"
-                className="flex items-center justify-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+                className="flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <FaPhone className="mr-2" />
                 <span>010-7465-5179</span>
               </a>
               <Link 
                 href="#contact"
-                className="flex items-center justify-center px-4 py-2 border border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition-colors"
+                className="flex items-center justify-center px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 상담 신청

@@ -1,5 +1,7 @@
+'use client';
+
 import React from 'react';
-import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaFacebook, FaInstagram, FaYoutube, FaLeaf, FaTools, FaChartLine } from 'react-icons/fa';
+import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaFacebook, FaInstagram, FaYoutube, FaLeaf, FaTools, FaChartLine, FaArrowUp } from 'react-icons/fa';
 import { RiKakaoTalkFill } from 'react-icons/ri';
 import Link from 'next/link';
 import AnimatedSection from '../AnimatedSection';
@@ -30,8 +32,24 @@ const Footer = () => {
     { icon: FaChartLine, text: '성능 향상 보장' }
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white pt-16 pb-8">
+    <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white pt-16 pb-8 relative">
+      {/* 맨 위로 버튼 */}
+      <button
+        onClick={scrollToTop}
+        className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all hover:scale-110 shadow-xl"
+        aria-label="맨 위로 이동"
+      >
+        <FaArrowUp className="w-8 h-8" />
+      </button>
+
       <div className="container">
         <AnimatedSection delay={0.1}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
@@ -68,7 +86,7 @@ const Footer = () => {
                       <span className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center mr-3 group-hover:bg-primary-600 transition-colors">
                         <item.icon className="w-4 h-4" />
                       </span>
-                      <span>{item.text}</span>
+                      <span className="whitespace-pre-line">{item.text}</span>
                     </Link>
                   </li>
                 ))}
@@ -113,7 +131,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-center mt-6 text-gray-600 text-xs">
-              농기계 ECU 튜닝 및 매핑 서비스 | 사업자등록번호: 123-45-67890 | 대표: 홍길동
+              농기계 ECU 튜닝 및 매핑 서비스
             </div>
           </div>
         </AnimatedSection>
