@@ -1,16 +1,50 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import AnimatedSection from '../AnimatedSection';
 
 const MainVisual = () => {
+  const images = [
+    {
+      src: '/images/main-visual/hero-tractor-sunset.jpg.jpg',
+      alt: '트랙터 일몰'
+    },
+    {
+      src: '/images/main-visual/hero-combine-work.jpg.jpg',
+      alt: '콤바인 작업'
+    },
+    {
+      src: '/images/main-visual/equipment.jpg.jpg',
+      alt: 'ECU 장비'
+    }
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800">
-      <div className="absolute inset-0">
-        <img
-          src="/src/images/main-visual/hero-tractor-sunset.jpg.jpg"
-          alt="농기계 ECU 매핑"
-          className="w-full h-full object-cover opacity-40"
-        />
-      </div>
+      {images.map((image, index) => (
+        <div
+          key={image.src}
+          className={`absolute inset-0 transition-opacity duration-700 ${
+            index === currentImageIndex ? 'opacity-40' : 'opacity-0'
+          }`}
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ))}
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <AnimatedSection>
@@ -27,13 +61,27 @@ const MainVisual = () => {
         </AnimatedSection>
         
         <AnimatedSection delay={0.6}>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <button className="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
               무료 상담 신청
             </button>
             <button className="px-8 py-4 bg-white text-gray-900 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
               서비스 알아보기
             </button>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection delay={0.9}>
+          <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex gap-2">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  index === currentImageIndex ? 'bg-blue-400' : 'bg-gray-400'
+                }`}
+                onClick={() => setCurrentImageIndex(index)}
+              />
+            ))}
           </div>
         </AnimatedSection>
       </div>

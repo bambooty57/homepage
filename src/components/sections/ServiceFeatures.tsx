@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { FaShieldAlt, FaTools, FaUserCog, FaCheckCircle } from 'react-icons/fa';
@@ -55,12 +57,21 @@ const ServiceFeatures = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <AnimatedSection delay={0.8}>
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <img
-                src="/src/images/service-features/mapping-process.jpg.jpg"
-                alt="ECU 맵핑 테스트 과정"
-                className="w-full h-full object-cover"
-              />
+            <div className="space-y-6">
+              <div className="relative h-[300px] rounded-lg overflow-hidden mb-6">
+                <img
+                  src="/images/service-features/mapping-process.jpg.jpg"
+                  alt="ECU 맵핑 테스트 과정"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative h-[200px] rounded-lg overflow-hidden">
+                <img
+                  src="/images/ecu-mapping/ecu-device.jpg.jpg"
+                  alt="ECU 장비"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </AnimatedSection>
 
@@ -87,6 +98,13 @@ const ServiceFeatures = () => {
                   <span>작업 후 지속적인 사후 관리 지원</span>
                 </li>
               </ul>
+              <div className="relative h-[200px] rounded-lg overflow-hidden mt-8">
+                <img
+                  src="/images/ecu-mapping/step3-mapping.jpg.jpg"
+                  alt="매핑 과정"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </AnimatedSection>
         </div>

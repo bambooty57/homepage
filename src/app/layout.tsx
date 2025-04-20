@@ -10,8 +10,8 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: 'TracForce - 농기계 ECU 맵핑 전문',
-  description: '농기계의 성능과 연비를 최적화하는 ECU 맵핑 서비스. 전문가의 안전하고 검증된 튜닝으로 농기계의 잠재력을 끌어내세요.',
+  title: 'TracForce - 농기계 ECU 매핑 전문',
+  description: 'TracForce의 전문 ECU 매핑 서비스로 농기계의 잠재력을 극대화하세요.',
   keywords: '농기계 ECU 맵핑, 트랙터 튜닝, 농기계 성능 개선, ECU 튜닝, 연비 개선, TracForce',
   authors: [{ name: 'TracForce' }],
   creator: 'TracForce',
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  metadataBase: new URL('http://localhost:3000'),
   viewport: {
     width: 'device-width',
     initialScale: 1,

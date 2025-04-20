@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import AnimatedSection from '../AnimatedSection';
 
@@ -21,7 +20,7 @@ const Testimonials = () => {
       name: '이상철 님',
       location: '전라북도 김제시',
       content: 'ECU 맵핑 후 트랙터의 힘이 달라졌어요. 특히 경사지 작업이 한결 수월해졌습니다.',
-      image: '/images/testimonials/farmer2.jpg',
+      image: '/images/testimonials/ozz4u.jpg',
       rating: 5,
       machine: '뉴홀랜드 T6.180 트랙터'
     },
@@ -29,9 +28,25 @@ const Testimonials = () => {
       name: '박정훈 님',
       location: '충청남도 예산군',
       content: '전문적이고 친절한 상담부터 작업까지 모든 과정이 만족스러웠습니다. 확실한 성능 개선을 경험했습니다.',
-      image: '/images/testimonials/farmer3.jpg',
+      image: '/images/testimonials/5dijeca.jpg',
       rating: 5,
-      machine: '클라스 아리온 630C 트랙터'
+      machine: '펜트 724 Vario 트랙터'
+    },
+    {
+      name: '정민수 님',
+      location: '경상북도 상주시',
+      content: '구보다 트랙터의 출력 향상에 매우 만족합니다. 이전보다 훨씬 더 강력한 힘으로 작업할 수 있어 작업 시간이 크게 단축되었습니다.',
+      image: '/images/testimonials/jfnud003.jpg',
+      rating: 5,
+      machine: '구보다 MR737 트랙터'
+    },
+    {
+      name: '윤재현 님',
+      location: '전라남도 해남군',
+      content: '콤바인 성능이 확실히 개선되었습니다. 수확 작업이 빨라졌고 연료 효율도 좋아져 경제적으로도 큰 도움이 됩니다.',
+      image: '/images/testimonials/fgls3s.jpg',
+      rating: 5,
+      machine: '구보다 ZR_7130 콤바인'
     }
   ];
 
@@ -64,11 +79,10 @@ const Testimonials = () => {
 
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative h-[300px] rounded-lg overflow-hidden">
-                  <Image
+                  <img
                     src={testimonials[activeIndex].image}
                     alt={testimonials[activeIndex].name}
-                    fill
-                    className="object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
@@ -110,6 +124,10 @@ const Testimonials = () => {
                 >
                   <FaChevronRight className="w-6 h-6" />
                 </button>
+              </div>
+              
+              <div className="absolute bottom-2 left-8">
+                <p className="text-xs text-gray-400">* 개인정보 보호를 위해 이미지는 연출된 것입니다.</p>
               </div>
             </div>
           </AnimatedSection>

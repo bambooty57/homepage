@@ -17,7 +17,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, delay = 0 }
         if (entry.isIntersecting) {
           setTimeout(() => {
             setIsVisible(true);
-          }, delay * 1000);
+          }, delay * 500);
         }
       },
       {
@@ -39,7 +39,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, delay = 0 }
   return (
     <div
       ref={sectionRef}
-      className={`transition-all duration-1000 ease-out ${
+      className={`transition-all duration-700 ease-out ${
         isVisible
           ? 'opacity-100 transform translate-y-0'
           : 'opacity-0 transform translate-y-10'
