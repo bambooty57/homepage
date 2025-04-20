@@ -4,13 +4,13 @@ import MainVisual from '@/components/sections/MainVisual';
 import ProblemStatement from '@/components/sections/ProblemStatement';
 import Solution from '@/components/sections/Solution';
 import ServiceFeatures from '@/components/sections/ServiceFeatures';
-import WorkProcess from '@/components/sections/WorkProcess';
 import Testimonials from '@/components/sections/Testimonials';
 import FAQ from '@/components/sections/FAQ';
 import CTA from '@/components/sections/CTA';
 import Footer from '@/components/sections/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
 import YouTubeSection from '@/components/sections/YouTubeSection';
+import WorkProcess from '@/components/sections/WorkProcess';
 
 export default function Home() {
   return (

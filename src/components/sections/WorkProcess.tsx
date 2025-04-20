@@ -38,7 +38,7 @@ const WorkProcess = () => {
             체계적이고 안전한 ECU 맵핑 과정
           </h2>
           <p className="text-xl text-gray-600 text-center mb-16">
-            TracForce는 철저한 프로세스로 안전하고 효과적인 ECU 맵핑 서비스를 제공합니다
+            TracForce(트랙포스)는 철저한 프로세스로 안전하고 효과적인 ECU 맵핑 서비스를 제공합니다
           </p>
         </AnimatedSection>
 
@@ -62,7 +62,7 @@ const WorkProcess = () => {
         <AnimatedSection delay={1.0}>
           <div className="text-center bg-gray-50 p-8 rounded-lg">
             <p className="text-lg text-gray-600 mb-8">
-              TracForce의 전문가와 함께 농기계의 성능을 최적화하세요.<br />
+              TracForce(트랙포스)의 전문가와 함께 농기계의 성능을 최적화하세요.<br />
               체계적인 과정을 통해 안전하고 효과적인 결과를 제공합니다.
             </p>
             <a 

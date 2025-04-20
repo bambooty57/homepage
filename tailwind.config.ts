@@ -10,33 +10,39 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#2B5F75',
-          light: '#4A7B8C',
-          dark: '#1D4D61'
+          50: 'rgb(var(--primary-50))',
+          100: 'rgb(var(--primary-100))',
+          200: 'rgb(var(--primary-200))',
+          300: 'rgb(var(--primary-300))',
+          400: 'rgb(var(--primary-400))',
+          500: 'rgb(var(--primary-500))',
+          600: 'rgb(var(--primary-600))',
+          700: 'rgb(var(--primary-700))',
+          800: 'rgb(var(--primary-800))',
+          900: 'rgb(var(--primary-900))',
         },
-        secondary: '#4A7B8C',
         accent: {
-          DEFAULT: '#F9A825',
-          light: '#FFB74D',
-          dark: '#F57F17'
+          green: 'rgb(var(--accent-green))',
+          yellow: 'rgb(var(--accent-yellow))',
+          orange: 'rgb(var(--accent-orange))',
         },
-      },
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
-      },
-      borderRadius: {
-        '4xl': '2rem',
       },
       fontFamily: {
-        noto: ['Noto Sans KR', 'sans-serif'],
+        sans: ['Noto Sans KR', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern': 'linear-gradient(to right bottom, rgba(var(--primary-800), 0.7), rgba(var(--primary-600), 0.4))',
+      },
+      boxShadow: {
+        'inner-light': 'inset 0 2px 4px 0 rgba(255, 255, 255, 0.05)',
+        'highlight': '0 0 15px rgba(var(--primary-400), 0.5)',
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-in forwards',
-        'slide-up': 'slideUp 0.5s ease-out forwards',
-        'slide-down': 'slideDown 0.3s ease-out forwards',
-        'slide-left': 'slideLeft 0.5s ease-out forwards',
-        'slide-right': 'slideRight 0.5s ease-out forwards',
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.7s ease-in-out',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         fadeIn: {
@@ -47,22 +53,15 @@ const config: Config = {
           '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        slideDown: {
-          '0%': { transform: 'translateY(-20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        slideLeft: {
-          '0%': { transform: 'translateX(20px)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
-        },
-        slideRight: {
-          '0%': { transform: 'translateX(-20px)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
-        },
       },
-      transitionTimingFunction: {
-        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
-        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+      borderRadius: {
+        'xl': '1rem',
+        '2xl': '1.5rem',
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
       },
     },
   },

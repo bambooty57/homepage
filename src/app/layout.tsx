@@ -10,12 +10,12 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: 'TracForce - 농기계 ECU 매핑 전문',
-  description: 'TracForce의 전문 ECU 매핑 서비스로 농기계의 잠재력을 극대화하세요.',
-  keywords: '농기계 ECU 맵핑, 트랙터 튜닝, 농기계 성능 개선, ECU 튜닝, 연비 개선, TracForce',
-  authors: [{ name: 'TracForce' }],
-  creator: 'TracForce',
-  publisher: 'TracForce',
+  title: '트랙포스 - 농기계 ECU 매핑 전문',
+  description: '트랙포스의 전문 ECU 매핑 서비스로 농기계의 잠재력을 극대화하세요.',
+  keywords: '농기계 ECU 맵핑, 트랙터 튜닝, 농기계 성능 개선, ECU 튜닝, 연비 개선, 트랙포스',
+  authors: [{ name: '트랙포스' }],
+  creator: '트랙포스',
+  publisher: '트랙포스',
   formatDetection: {
     email: false,
     address: false,
@@ -32,20 +32,15 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'TracForce - 농기계 ECU 맵핑 전문',
+    title: '트랙포스 - 농기계 ECU 맵핑 전문',
     description: '농기계의 성능과 연비를 최적화하는 ECU 맵핑 서비스',
     url: 'https://tracforce.co.kr',
-    siteName: 'TracForce',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'TracForce ECU 맵핑 서비스',
-      },
-    ],
+    siteName: '트랙포스',
     locale: 'ko_KR',
     type: 'website',
+  },
+  icons: {
+    icon: '/favicon.ico',
   },
 };
 

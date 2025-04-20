@@ -9,7 +9,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'ECU 맵핑이 농기계에 안전한가요?',
-      answer: '네, 안전합니다. TracForce의 ECU 맵핑은 제조사가 설정한 안전 한계 내에서 이루어지며, 수년간의 연구와 테스트를 통해 검증된 방식을 사용합니다. 또한 모든 맵핑에는 품질 보증이 제공됩니다.'
+      answer: '네, 안전합니다. TracForce(트랙포스)의 ECU 맵핑은 제조사가 설정한 안전 한계 내에서 이루어지며, 수년간의 연구와 테스트를 통해 검증된 방식을 사용합니다. 또한 모든 맵핑에는 품질 보증이 제공됩니다.'
     },
     {
       question: '어떤 농기계에 ECU 맵핑이 가능한가요?',
@@ -25,7 +25,7 @@ export default function FAQ() {
     },
     {
       question: '맵핑 후 사후 관리는 어떻게 되나요?',
-      answer: '맵핑 후 1년간 무상 점검 및 미세 조정을 제공합니다. 또한 24시간 기술 지원 핫라인을 통해 문의 사항에 대한 답변을 받으실 수 있습니다.'
+      answer: '맵핑 후 30일간 무상 점검 및 미세 조정을 제공합니다.'
     }
   ];
 
@@ -37,7 +37,7 @@ export default function FAQ() {
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-center mb-4">자주 묻는 질문</h2>
       <p className="text-gray-600 text-center mb-12">
-        TracForce ECU 맵핑 서비스에 대해 자주 묻는 질문들을 모았습니다.
+        TracForce(트랙포스) ECU 맵핑 서비스에 대해 자주 묻는 질문들을 모았습니다.
       </p>
 
       <div className="max-w-3xl mx-auto">
@@ -80,7 +80,7 @@ export default function FAQ() {
           <div className="relative w-96 h-54 mx-auto rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
             <Image
               src="/youtube-thumbnail.jpg"
-              alt="TracForce 유튜브 채널"
+              alt="TracForce(트랙포스) 유튜브 채널"
               layout="fill"
               objectFit="cover"
             />

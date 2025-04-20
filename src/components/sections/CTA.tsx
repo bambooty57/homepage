@@ -1,5 +1,6 @@
+'use client';
+
 import React from 'react';
-import { FaPhone, FaMapMarkerAlt, FaComments } from 'react-icons/fa';
 import AnimatedSection from '../AnimatedSection';
 
 const CTA = () => {
@@ -15,52 +16,10 @@ const CTA = () => {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <AnimatedSection delay={0.2}>
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4">
-                <FaPhone className="w-6 h-6 text-blue-200" />
-                <div>
-                  <p className="text-sm text-blue-200">전화 상담</p>
-                  <a
-                    href="tel:010-7465-5179"
-                    className="text-2xl font-semibold hover:text-blue-200 transition-colors"
-                  >
-                    010-7465-5179
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <FaMapMarkerAlt className="w-6 h-6 text-blue-200" />
-                <div>
-                  <p className="text-sm text-blue-200">주소</p>
-                  <p className="text-lg">
-                    광주광역시 남구 회재로 15-1
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <FaComments className="w-6 h-6 text-blue-200" />
-                <div>
-                  <p className="text-sm text-blue-200">카카오톡 상담</p>
-                  <a
-                    href="#"
-                    className="text-lg hover:text-blue-200 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    TracForce 카카오톡 채널
-                  </a>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
-
+        <div className="max-w-2xl mx-auto">
           <AnimatedSection delay={0.4}>
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <div className="mb-6">
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="mb-8">
                 <h3 className="text-gray-800 text-2xl font-semibold mb-2">
                   무료 상담 신청
                 </h3>
@@ -71,12 +30,25 @@ const CTA = () => {
 
               <div className="relative">
                 <iframe
-                  src="https://docs.google.com/forms/d/e/your-form-id/viewform?embedded=true"
-                  className="w-full h-[400px] border-0"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfQFGZqZZPxe_QWvvZKvpYGVJ5Hy1_YPPVwqxHJGcQiR7qkQw/viewform?embedded=true"
+                  className="w-full min-h-[800px] border-0"
                   title="상담 신청 양식"
                 >
                   로딩 중...
                 </iframe>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-gray-600 text-sm">
+                  * 상담 신청 후 24시간 이내에 연락드립니다.<br />
+                  * 문의사항이 있으시면 전화로도 연락 가능합니다.
+                </p>
+                <a 
+                  href="tel:010-7465-5179"
+                  className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  전화 상담하기
+                </a>
               </div>
             </div>
           </AnimatedSection>
