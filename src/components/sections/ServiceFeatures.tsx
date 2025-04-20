@@ -56,11 +56,10 @@ const ServiceFeatures = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <AnimatedSection delay={0.8}>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src="/images/service-features/ecu-testing.jpg"
+              <img
+                src="/src/images/service-features/mapping-process.jpg.jpg"
                 alt="ECU 맵핑 테스트 과정"
-                fill
-                className="object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
           </AnimatedSection>

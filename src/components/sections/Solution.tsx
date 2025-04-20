@@ -37,12 +37,10 @@ const Solution = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <AnimatedSection delay={0.2}>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src={mappingProcessImage}
+              <img
+                src="/src/images/ecu-mapping/engine-tuning.jpg.jpg"
                 alt="ECU 맵핑 프로세스"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
           </AnimatedSection>

@@ -6,7 +6,7 @@ const MainVisual = () => {
     <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800">
       <div className="absolute inset-0">
         <img
-          src="/images/main-visual/hero-tractor-field.jpg"
+          src="/src/images/main-visual/hero-tractor-sunset.jpg.jpg"
           alt="농기계 ECU 매핑"
           className="w-full h-full object-cover opacity-40"
         />
