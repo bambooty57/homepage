@@ -82,11 +82,11 @@ const MainVisual = () => {
       ))}
       
       {/* 콘텐츠 */}
-      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center">
+      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center mt-32 md:mt-0">
         <AnimatedSection>
           <div className="max-w-3xl w-full mx-auto text-white text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-8">
-              <div className="flex justify-center items-center mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8">
+              <div className="flex justify-center items-center mb-4 md:mb-5">
                 <span className="text-yellow-400 text-5xl md:text-6xl lg:text-8xl drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">트랙포스</span>
               </div>
               <div className="mb-2">

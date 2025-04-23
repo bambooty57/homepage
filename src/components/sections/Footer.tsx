@@ -11,7 +11,7 @@ const Footer = () => {
   
   const contactInfo = [
     { icon: FaPhone, text: '010-7465-5179', href: 'tel:010-7465-5179' },
-    { icon: FaMapMarkerAlt, text: '광주광역시 남구 회재로1200번길15-1\n15-1, Hoejae-ro 1200beon-gil, Nam-gu, Gwangju', href: 'https://maps.google.com/?q=광주광역시+남구+회재로1200번길15-1' },
+    { icon: FaMapMarkerAlt, text: '15-1, Hoejae-ro 1200beon-gil, Nam-gu, Gwangju', href: 'https://maps.google.com/?q=15-1,+Hoejae-ro+1200beon-gil,+Nam-gu,+Gwangju' },
     { icon: FaEnvelope, text: 'bambooty57@gmail.com', href: 'mailto:bambooty57@gmail.com' }
   ];
 
