@@ -11,6 +11,7 @@ import Footer from '@/components/sections/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
 import YouTubeSection from '@/components/sections/YouTubeSection';
 import WorkProcess from '@/components/sections/WorkProcess';
+import ScrSolutionSection from '@/components/sections/ScrSolutionSection';
 
 export default function Home() {
   return (
@@ -30,6 +31,12 @@ export default function Home() {
       <AnimatedSection delay={0.2}>
         <section id="solution" className="section-padding bg-gray-50">
           <Solution />
+        </section>
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.25}>
+        <section id="scr-solution" className="section-padding">
+          <ScrSolutionSection />
         </section>
       </AnimatedSection>
 

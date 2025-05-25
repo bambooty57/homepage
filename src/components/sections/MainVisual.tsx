@@ -26,7 +26,7 @@ const MainVisual = () => {
     // 이미지 슬라이더 타이머
     const timer = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 2500);
 
     // CSS 키프레임 추가
     const styles = document.createElement('style');
@@ -96,7 +96,8 @@ const MainVisual = () => {
             </h1>
             <p className="text-xl text-white/95 mb-12 max-w-2xl mx-auto leading-relaxed bg-black/20 py-3 px-4 rounded-lg backdrop-blur-sm">
               전문 ECU 매핑 기술로 농기계의 효율성과 출력을 최적화하여<br />
-              <span className="font-bold text-yellow-200">최대 성능을</span> 이끌어냅니다
+              <span className="font-bold text-yellow-200">최대 성능</span>을 이끌어냅니다<br />
+              <span className="font-bold text-green-300">요소수(SCR) 문제, 출력저하 고민도 트랙포스가 해결!</span>
             </p>
           </div>
         </AnimatedSection>
@@ -137,6 +138,14 @@ const MainVisual = () => {
               aria-label={`이미지 ${index + 1}번으로 이동`}
             />
           ))}
+        </div>
+
+        <div className="flex justify-center mt-6">
+          <img
+            src="/images/service-features/system-diagram.png"
+            alt="요소수(SCR) 시스템 구조"
+            className="w-[320px] h-auto rounded-lg shadow-lg border-2 border-green-300 bg-white/80"
+          />
         </div>
       </div>
 
