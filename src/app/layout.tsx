@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Noto_Sans_KR } from 'next/font/google';
 import './globals.css';
+import { Viewport } from 'next';
 
 const notoSansKr = Noto_Sans_KR({ 
   subsets: ['latin'],
@@ -21,12 +22,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('http://localhost:3000'),
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  metadataBase: new URL('https://www.tracforce.co/'),
   robots: {
     index: true,
     follow: true,
@@ -43,6 +39,14 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
   },
 };
+
+export function generateViewport(): Viewport {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  };
+}
 
 export default function RootLayout({
   children,

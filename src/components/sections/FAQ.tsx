@@ -79,10 +79,11 @@ export default function FAQ() {
         >
           <div className="relative w-96 h-54 mx-auto rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
             <Image
-              src="/youtube-thumbnail.jpg"
-              alt="TracForce(트랙포스) 유튜브 채널"
-              layout="fill"
-              objectFit="cover"
+              src="/images/youtube/video-mapping-process.jpg.png"
+              alt="TracForce(트랙포스) 유튜브 채널 - 파워튜닝 과정"
+              fill
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
               <span className="text-white text-lg font-semibold">

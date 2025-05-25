@@ -59,7 +59,13 @@ const MainVisual = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section 
+      className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden pt-20 bg-gray-800"
+      style={{ 
+        backgroundImage: `url(${images[currentImageIndex].src})`,
+        backgroundSize: 'cover',
+      }}
+    >
       {/* 이미지 슬라이더 */}
       {images.map((image, index) => (
         <div
@@ -86,7 +92,7 @@ const MainVisual = () => {
         <AnimatedSection>
           <div className="max-w-3xl w-full mx-auto text-white text-center">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8">
-              <div className="flex justify-center items-center mb-4 md:mb-5">
+              <div className="flex justify-center items-center mb-4 md:mb-5 mt-12">
                 <span className="text-yellow-400 text-5xl md:text-6xl lg:text-8xl drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">트랙포스</span>
               </div>
               <div className="mb-2">
