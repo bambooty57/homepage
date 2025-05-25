@@ -14,7 +14,7 @@ const CTA = () => {
               전문가와 상담하세요
             </h2>
             <p className="text-2xl text-blue-100 mb-12">
-              TracForce의 ECU 맵핑 전문가가 최적의 솔루션을 제안해드립니다
+              TracForce의 파워튜닝 전문가가 최적의 솔루션을 제안해드립니다
             </p>
           </div>
         </AnimatedSection>

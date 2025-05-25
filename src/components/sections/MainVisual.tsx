@@ -16,7 +16,7 @@ const MainVisual = () => {
     },
     {
       src: '/images/main-visual/equipment.jpg.jpg',
-      alt: 'ECU 장비'
+      alt: '파워튜닝 장비'
     }
   ];
 
@@ -52,9 +52,9 @@ const MainVisual = () => {
   }, []);
 
   const scrollToNextSection = () => {
-    const featuresSection = document.getElementById('features');
-    if (featuresSection) {
-      featuresSection.scrollIntoView({ behavior: 'smooth' });
+    const testimonialsSection = document.getElementById('testimonials');
+    if (testimonialsSection) {
+      testimonialsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -82,7 +82,7 @@ const MainVisual = () => {
       ))}
       
       {/* 콘텐츠 */}
-      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center mt-32 md:mt-0">
+      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center mt-32 md:mt-0 h-full">
         <AnimatedSection>
           <div className="max-w-3xl w-full mx-auto text-white text-center">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8">
@@ -94,38 +94,48 @@ const MainVisual = () => {
               </div>
               <span className="block mt-6 text-white text-3xl md:text-4xl lg:text-5xl">감춰진 마법의 힘을 찾으세요!</span>
             </h1>
-            <p className="text-xl text-white/95 mb-12 max-w-2xl mx-auto leading-relaxed bg-black/20 py-3 px-4 rounded-lg backdrop-blur-sm">
-              전문 ECU 매핑 기술로 농기계의 효율성과 출력을 최적화하여<br />
-              <span className="font-bold text-yellow-200">최대 성능</span>을 이끌어냅니다<br />
-              <span className="font-bold text-green-300">요소수(SCR) 문제, 출력저하 고민도 트랙포스가 해결!</span>
+            <p className="text-2xl text-white/95 mb-16 max-w-3xl mx-auto leading-loose bg-black/25 py-4 px-5 rounded-xl backdrop-blur-sm shadow-lg">
+              전문 파워튜닝 기술로 농기계의 효율성과 출력을 최적화하여<br />
+              <span className="font-bold text-yellow-300">최대 성능</span>을 이끌어냅니다<br />
+              <span className="font-bold text-green-400">요소수(SCR) 문제, 출력저하 고민도 트랙포스가 해결!</span>
             </p>
           </div>
         </AnimatedSection>
-        
-        <AnimatedSection delay={0.3}>
-          {/* 버튼을 아래로 이동 */}
-          <div className="flex justify-center items-center mt-16 mb-24">
-            <a 
-              href="#contact" 
-              className="btn-primary group text-lg px-8 py-4 bg-yellow-500 hover:bg-yellow-600 font-bold"
-            >
-              <span>무료 상담 신청하기</span>
-              <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </a>
+
+        {/* 요소수 관련 이미지 3개 - 메인 텍스트와 CTA 버튼 사이 */}
+        <AnimatedSection delay={0.2}>
+          <div className="w-full max-w-7xl mx-auto mt-16 mb-20">
+            <div className="flex justify-center items-end gap-6 flex-wrap px-4">
+              <div className="flex flex-col items-center">
+                <img
+                  src="/images/service-features/scr-warning.png"
+                  alt="SCR 막힘 경고"
+                  className="w-[340px] h-auto rounded-xl shadow-2xl border-4 border-red-500 bg-white hover:scale-105 transition-transform duration-300"
+                />
+                <p className="text-red-500 font-bold mt-3 text-lg">SCR 막힘 → 막대한 수리비!</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/images/service-features/dpf-warning.png"
+                  alt="DPF 경고등"
+                  className="w-[340px] h-auto rounded-xl shadow-2xl border-4 border-orange-500 bg-white hover:scale-105 transition-transform duration-300"
+                />
+                <p className="text-orange-500 font-bold mt-3 text-lg">DPF 경고등 → 출력저하!</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/images/service-features/system-diagram.png"
+                  alt="요소수(SCR) 시스템 구조"
+                  className="w-[340px] h-auto rounded-xl shadow-2xl border-4 border-green-500 bg-white hover:scale-105 transition-transform duration-300"
+                />
+                <p className="text-green-500 font-bold mt-3 text-lg">트랙포스 해결책!</p>
+              </div>
+            </div>
           </div>
         </AnimatedSection>
-
-        {/* 스크롤 다운 인디케이터 - 더 아래로 이동 */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white animate-float cursor-pointer"
-             onClick={scrollToNextSection}>
-          <div className="flex flex-col items-center">
-            <span className="text-sm font-light mb-2">더 알아보기</span>
-            <FaChevronDown className="animate-bounce" />
-          </div>
-        </div>
-
-        {/* 슬라이더 인디케이터 */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex gap-2">
+        
+        {/* 슬라이더 인디케이터 - 버튼 위로 이동 */}
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
           {images.map((_, index) => (
             <button
               key={index}
@@ -140,12 +150,17 @@ const MainVisual = () => {
           ))}
         </div>
 
-        <div className="flex justify-center mt-6">
-          <img
-            src="/images/service-features/system-diagram.png"
-            alt="요소수(SCR) 시스템 구조"
-            className="w-[320px] h-auto rounded-lg shadow-lg border-2 border-green-300 bg-white/80"
-          />
+        {/* 버튼 - 최하단 중앙 고정 */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <AnimatedSection delay={0.3}>
+            <a 
+              href="#contact" 
+              className="btn-primary group text-lg px-8 py-4 bg-yellow-500 hover:bg-yellow-600 font-bold"
+            >
+              <span>무료 상담 신청하기</span>
+              <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </AnimatedSection>
         </div>
       </div>
 

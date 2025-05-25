@@ -8,8 +8,8 @@ const YouTubeSection = () => {
   const videos = [
     {
       thumbnail: '/images/youtube/video-mapping-process.jpg.png',
-      title: 'ECU 매핑 과정 살펴보기',
-      description: '전문가가 설명하는 ECU 매핑의 A to Z',
+      title: '파워튜닝 과정 살펴보기',
+      description: '전문가가 설명하는 파워튜닝의 A to Z',
       link: 'https://www.youtube.com/watch?v=FiCDF4_LeS8'
     },
     {
@@ -26,7 +26,7 @@ const YouTubeSection = () => {
         <AnimatedSection>
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold mb-4">
-              영상으로 보는 ECU 매핑
+              영상으로 보는 파워튜닝
             </h2>
             <p className="text-xl text-gray-600">
               실제 작업 과정과 성능 향상 결과를 확인해보세요

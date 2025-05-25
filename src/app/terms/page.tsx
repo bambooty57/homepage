@@ -23,7 +23,7 @@ export default function Terms() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">제1조 (목적)</h2>
           <p className="text-gray-600 leading-relaxed">
-            이 약관은 트랙포스(이하 "회사")가 제공하는 ECU 맵핑 서비스(이하 "서비스")의 이용조건 및 절차, 회사와 이용자의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
+            이 약관은 트랙포스(이하 "회사")가 제공하는 파워튜닝 서비스(이하 "서비스")의 이용조건 및 절차, 회사와 이용자의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
           </p>
         </section>
 
@@ -33,9 +33,9 @@ export default function Terms() {
             이 약관에서 사용하는 용어의 정의는 다음과 같습니다:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>"서비스"란 회사가 제공하는 ECU 맵핑 및 관련 서비스를 의미합니다.</li>
+            <li>"서비스"란 회사가 제공하는 파워튜닝 및 관련 서비스를 의미합니다.</li>
             <li>"이용자"란 이 약관에 따라 회사가 제공하는 서비스를 이용하는 고객을 말합니다.</li>
-            <li>"ECU 맵핑"이란 차량의 전자제어장치(ECU)의 프로그래밍을 최적화하는 것을 의미합니다.</li>
+            <li>"파워튜닝"이란 차량의 전자제어장치(ECU)의 프로그래밍을 최적화하는 것을 의미합니다.</li>
           </ul>
         </section>
 
@@ -52,7 +52,7 @@ export default function Terms() {
           <h2 className="text-2xl font-semibold mb-4">제4조 (서비스의 제공)</h2>
           <p className="text-gray-600 leading-relaxed">
             1. 회사는 다음과 같은 서비스를 제공합니다:<br />
-            - ECU 맵핑 서비스<br />
+            - 파워튜닝 서비스<br />
             - 성능 최적화 서비스<br />
             - 관련 상담 및 기술지원<br /><br />
             2. 회사는 서비스의 제공에 필요한 경우 정기점검을 실시할 수 있으며, 이러한 경우 사전에 공지합니다.

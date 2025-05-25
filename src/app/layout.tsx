@@ -10,9 +10,9 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: '트랙포스 - 농기계 ECU 매핑 전문',
-  description: '트랙포스의 전문 ECU 매핑 서비스로 농기계의 잠재력을 극대화하세요.',
-  keywords: '농기계 ECU 맵핑, 트랙터 튜닝, 농기계 성능 개선, ECU 튜닝, 연비 개선, 트랙포스',
+  title: '트랙포스 - 농기계 파워튜닝 전문',
+  description: '트랙포스의 전문 파워튜닝 서비스로 농기계의 잠재력을 극대화하세요.',
+  keywords: '농기계 파워튜닝, 트랙터 튜닝, 농기계 성능 개선, 파워튜닝, 연비 개선, 트랙포스',
   authors: [{ name: '트랙포스' }],
   creator: '트랙포스',
   publisher: '트랙포스',
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: '트랙포스 - 농기계 ECU 맵핑 전문',
-    description: '농기계의 성능과 연비를 최적화하는 ECU 맵핑 서비스',
+    title: '트랙포스 - 농기계 파워튜닝 전문',
+    description: '농기계의 성능과 연비를 최적화하는 파워튜닝 서비스',
     url: 'https://tracforce.co.kr',
     siteName: '트랙포스',
     locale: 'ko_KR',

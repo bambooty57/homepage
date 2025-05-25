@@ -3,14 +3,14 @@ import Header from '@/components/Header';
 import MainVisual from '@/components/sections/MainVisual';
 import ProblemStatement from '@/components/sections/ProblemStatement';
 import Solution from '@/components/sections/Solution';
-import ServiceFeatures from '@/components/sections/ServiceFeatures';
+
 import Testimonials from '@/components/sections/Testimonials';
 import FAQ from '@/components/sections/FAQ';
 import CTA from '@/components/sections/CTA';
 import Footer from '@/components/sections/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
 import YouTubeSection from '@/components/sections/YouTubeSection';
-import WorkProcess from '@/components/sections/WorkProcess';
+
 import ScrSolutionSection from '@/components/sections/ScrSolutionSection';
 
 export default function Home() {
@@ -40,17 +40,9 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      <AnimatedSection delay={0.3}>
-        <section id="features" className="section-padding">
-          <ServiceFeatures />
-        </section>
-      </AnimatedSection>
 
-      <AnimatedSection delay={0.4}>
-        <section id="process" className="section-padding bg-gray-50">
-          <WorkProcess />
-        </section>
-      </AnimatedSection>
+
+
 
       <AnimatedSection delay={0.5}>
         <section id="youtube" className="section-padding">

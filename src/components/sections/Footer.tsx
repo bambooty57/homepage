@@ -62,7 +62,7 @@ const Footer = () => {
                 </span>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                농기계 ECU 맵핑 전문 기업으로, 안전하고 효율적인 성능 최적화를 통해 
+                농기계 파워튜닝 전문 기업으로, 안전하고 효율적인 성능 최적화를 통해 
                 고객의 농기계가 최대 잠재력을 발휘할 수 있도록 돕습니다.
               </p>
 
@@ -131,7 +131,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-center mt-6 text-gray-600 text-xs">
-              농기계 ECU 튜닝 및 매핑 서비스
+              농기계 파워튜닝 서비스
             </div>
           </div>
         </AnimatedSection>

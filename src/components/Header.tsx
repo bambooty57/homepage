@@ -53,18 +53,8 @@ const Header = () => {
           {/* 데스크탑 네비게이션 */}
           <div className="hidden md:flex items-center space-x-4">
             <nav className="flex items-center space-x-8 mr-8">
-              <Link 
-                href="#features" 
-                className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
-              >
-                서비스 특징
-              </Link>
-              <Link 
-                href="#process" 
-                className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
-              >
-                작업 과정
-              </Link>
+
+
               <Link 
                 href="#testimonials" 
                 className="text-gray-700 hover:text-primary-600 transition-colors py-2 border-b-2 border-transparent hover:border-primary-600"
@@ -100,20 +90,8 @@ const Header = () => {
         {/* 모바일 메뉴 */}
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <nav className="flex flex-col space-y-4 pb-4">
-            <Link 
-              href="#features" 
-              className="text-gray-700 hover:text-primary-600 py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              서비스 특징
-            </Link>
-            <Link 
-              href="#process" 
-              className="text-gray-700 hover:text-primary-600 py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              작업 과정
-            </Link>
+
+
             <Link 
               href="#testimonials" 
               className="text-gray-700 hover:text-primary-600 py-2"
