@@ -44,21 +44,32 @@ export default function FAQ() {
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
             <button
-              className={`w-full text-left p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all ${
+              className={`w-full text-left p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
                 activeIndex === index ? 'bg-primary-50' : ''
               }`}
               onClick={() => toggleFAQ(index)}
+              aria-expanded={activeIndex === index}
+              aria-controls={`faq-answer-${index}`}
+              id={`faq-question-${index}`}
             >
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-semibold">{faq.question}</h3>
-                <span className={`transform transition-transform ${
-                  activeIndex === index ? 'rotate-180' : ''
-                }`}>
+                <span 
+                  className={`transform transition-transform ${
+                    activeIndex === index ? 'rotate-180' : ''
+                  }`}
+                  aria-hidden="true"
+                >
                   ▼
                 </span>
               </div>
               {activeIndex === index && (
-                <p className="mt-4 text-gray-600 animate-fadeIn">
+                <p 
+                  id={`faq-answer-${index}`}
+                  className="mt-4 text-gray-600 animate-fadeIn"
+                  role="region"
+                  aria-labelledby={`faq-question-${index}`}
+                >
                   {faq.answer}
                 </p>
               )}

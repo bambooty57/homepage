@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import AnimatedSection from '../AnimatedSection';
 
@@ -20,7 +21,7 @@ const Testimonials = () => {
       name: '이상철 님',
       location: '전라북도 김제시',
       content: '파워튜닝 후 트랙터의 힘이 완전히 달라졌습니다. 로터리 작업시 조금 깊게 넣으면 출력이 죽어 자꾸 로터리를 올렸는데 이제 그럴필요없이 꾸준하게 힘이 차고 나갑니다. 작업시간이 많이 단축되어 연료 소모량도 눈에 띄게 줄었습니다.',
-      image: '/images/testimonials/ozz4u.jpg',
+      image: '/images/testimonials/farmer2.png',
       rating: 5,
       machine: '뉴홀랜드 T6.180 트랙터'
     },
@@ -35,8 +36,8 @@ const Testimonials = () => {
     {
       name: '정민수 님',
       location: '경상북도 상주시',
-      content: '신동진 벼처럼 낱알이 잘 떨어지는 벼 수확에는 원래도 문제가 없었지만, 영호진미처럼 쪽정이가 질긴 벼 품종 수확에는 튜닝 전에 힘이 딸렸었습니다. 파워튜닝 후에는 어떤 품종이든 힘이 넘쳐나 수확이 수월해졌고, 특히 젖은 논에서의 작업 능력이 크게 향상되었습니다. 벼 이외에도 밀, 보리 수확 시에도 막힘 없이 빠른 속도로 작업할 수 있어 수확 시즌 일정 관리에 큰 도움이 됩니다.',
-      image: '/images/testimonials/jfnud003.jpg',
+      content: '신동진 벼처럼 낱알이 잘 떨어지는 벼 수확에는 원래도 문제가 없었지만, 영호진미처럼 쪽정이가 질긴 벼 품종 수확에는 튜닝 전에 힘이 딸렸었습니다. 파워튜닝 후에는 어떤 품종이든 힘이 넘쳐나 수확이 수월해졌고, 특히 젖은 논에서의 작업 능력이 크게 향상되었습니다. 아침일찍 작업을 시작해 이슬기가 있어도 파워가 넘쳐 쉽게 밀고나갈수 있었습니다. 적극 추천합니다.',
+      image: '/images/testimonials/farmer4.png',
       rating: 5,
       machine: '구보다 ZR7130 콤바인'
     },
@@ -44,9 +45,9 @@ const Testimonials = () => {
       name: '윤재현 님',
       location: '전라남도 해남군',
       content: '콤바인 작업 시 가장 큰 변화를 느꼈습니다. 아침 일찍 이슬이 많은 상태에서 작업하거나 조벼를 수확할 때 버벅거림이 있었는데, 이제는 힘이 넘쳐나서 출력이 저하되지 않고 수월하게 작업할 수 있습니다. 특히 벼가 쓰러진 논에서도 일정한 속도를 유지할 수 있게 되어 작업 효율이 크게 향상되었고, 연료 효율도 좋아져 하루 작업량이 확실히 늘었습니다.',
-      image: '/images/testimonials/fgls3s.jpg',
+      image: '/images/testimonials/farmer5.png',
       rating: 5,
-      machine: '얀마 7조 콤바인'
+      machine: '얀마 6조 콤바인'
     }
   ];
 
@@ -78,11 +79,13 @@ const Testimonials = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-16 items-center">
-                <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
-                  <img
+                <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg bg-gray-100">
+                  <Image
                     src={testimonials[activeIndex].image}
                     alt={testimonials[activeIndex].name}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
 
@@ -116,14 +119,14 @@ const Testimonials = () => {
                 <div className="absolute bottom-12 right-12 space-x-8">
                   <button
                     onClick={prevTestimonial}
-                    className="p-4 bg-gray-100 rounded-full text-gray-600 hover:text-blue-600 hover:bg-gray-200 transition-colors"
+                    className="p-4 bg-gray-100 rounded-full text-gray-600 hover:text-blue-600 hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
                     aria-label="이전 후기"
                   >
                     <FaChevronLeft className="w-7 h-7" />
                   </button>
                   <button
                     onClick={nextTestimonial}
-                    className="p-4 bg-gray-100 rounded-full text-gray-600 hover:text-blue-600 hover:bg-gray-200 transition-colors"
+                    className="p-4 bg-gray-100 rounded-full text-gray-600 hover:text-blue-600 hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
                     aria-label="다음 후기"
                   >
                     <FaChevronRight className="w-7 h-7" />
@@ -134,15 +137,18 @@ const Testimonials = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={0.4}>
-            <div className="flex justify-center mt-12 space-x-4">
+            <div className="flex justify-center mt-12 space-x-4" role="tablist" aria-label="고객 후기 인디케이터">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`w-5 h-5 rounded-full transition-colors ${
+                  className={`w-5 h-5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                     index === activeIndex ? 'bg-blue-600 w-12' : 'bg-gray-300'
                   }`}
                   aria-label={`${index + 1}번 후기로 이동`}
+                  aria-selected={index === activeIndex}
+                  role="tab"
+                  tabIndex={index === activeIndex ? 0 : -1}
                 />
               ))}
             </div>

@@ -44,7 +44,7 @@ const Footer = () => {
       {/* 맨 위로 버튼 */}
       <button
         onClick={scrollToTop}
-        className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all hover:scale-110 shadow-xl"
+        className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all hover:scale-110 shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
         aria-label="맨 위로 이동"
       >
         <FaArrowUp className="w-8 h-8" />
@@ -62,7 +62,7 @@ const Footer = () => {
                 </span>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                농기계 파워튜닝 전문 기업으로, 안전하고 효율적인 성능 최적화를 통해 
+                농기계 파워튜닝 전문 기업으로, 안전하고 효율적인 성능 최적화를 통해<br />
                 고객의 농기계가 최대 잠재력을 발휘할 수 있도록 돕습니다.
               </p>
 

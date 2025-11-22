@@ -39,9 +39,10 @@ const Header = () => {
 
           {/* 모바일 메뉴 버튼 */}
           <button 
-            className="md:hidden text-gray-700 focus:outline-none"
+            className="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 rounded"
             onClick={toggleMenu}
-            aria-label="메뉴 열기"
+            aria-label={isMenuOpen ? "메뉴 닫기" : "메뉴 열기"}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? (
               <FaTimes className="h-6 w-6" />

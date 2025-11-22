@@ -36,7 +36,8 @@ const CTA = () => {
                   href="https://forms.gle/t39yNVivLXSPnLUs8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-10 py-5 bg-blue-600 text-white text-xl rounded-lg font-semibold hover:bg-blue-700 transition-colors transform hover:scale-105 duration-200"
+                  className="inline-block px-10 py-5 bg-blue-600 text-white text-xl rounded-lg font-semibold hover:bg-blue-700 transition-colors transform hover:scale-105 duration-200 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+                  aria-label="Google Forms에서 상담 신청하기 (새 창)"
                 >
                   상담 신청하기
                 </a>
@@ -52,9 +53,10 @@ const CTA = () => {
                 </p>
                 <a 
                   href="tel:010-7465-5179"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white text-xl rounded-lg hover:bg-green-700 transition-colors transform hover:scale-105 duration-200"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white text-xl rounded-lg hover:bg-green-700 transition-colors transform hover:scale-105 duration-200 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+                  aria-label="전화하기: 010-7465-5179"
                 >
-                  <FaPhone className="mr-3 text-2xl" />
+                  <FaPhone className="mr-3 text-2xl" aria-hidden="true" />
                   <span>010-7465-5179</span>
                 </a>
               </div>

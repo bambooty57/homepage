@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '트랙포스 - 농기계 파워튜닝 전문',
     description: '농기계의 성능과 연비를 최적화하는 파워튜닝 서비스',
-    url: 'https://tracforce.co.kr',
+    url: 'https://www.tracforce.co/',
     siteName: '트랙포스',
     locale: 'ko_KR',
     type: 'website',

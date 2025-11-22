@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { FaYoutube, FaPlay } from 'react-icons/fa';
 import AnimatedSection from '../AnimatedSection';
 
@@ -43,11 +44,13 @@ const YouTubeSection = () => {
                 rel="noopener noreferrer"
                 className="block group"
               >
-                <div className="relative rounded-lg overflow-hidden shadow-lg">
-                  <img
+                <div className="relative rounded-lg overflow-hidden shadow-lg aspect-video">
+                  <Image
                     src={video.thumbnail}
                     alt={video.title}
-                    className="w-full aspect-video object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <FaPlay className="w-16 h-16 text-white" />

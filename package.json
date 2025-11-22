@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["농기계", "파워튜닝", "트랙터", "튜닝", "트랙포스", "TracForce"],
+  "author": "트랙포스",
   "license": "ISC",
-  "description": "",
+  "description": "트랙포스의 농기계 파워튜닝 전문 랜딩 페이지",
   "dependencies": {
     "critters": "^0.0.23",
     "next": "14.1.0",
